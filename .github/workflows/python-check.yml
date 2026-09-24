@@ -1,0 +1,33 @@
+name: Python Check
+
+on:
+  push:
+    paths:
+      - "software/**/*.py"
+      - "software/**/requirements.txt"
+      - ".github/workflows/python-check.yml"
+  pull_request:
+    paths:
+      - "software/**/*.py"
+      - "software/**/requirements.txt"
+      - ".github/workflows/python-check.yml"
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile Python sources
+        run: |
+          python -m py_compile software/desktop_usb_voice/sign_language_usb_voice.py
+
+      - name: Check requirements file
+        run: |
+          test -s software/desktop_usb_voice/requirements.txt
