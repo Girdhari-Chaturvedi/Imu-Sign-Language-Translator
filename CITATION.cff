@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "IMU Sign Language Translator"
+message: "If you use this project in research, education, or another project, please cite the repository."
+type: software
+repository-code: "https://github.com/Girdhari-Chaturvedi/Imu-Sign-Language-Translator"
+url: "https://github.com/Girdhari-Chaturvedi/Imu-Sign-Language-Translator"
+authors:
+  - family-names: "Chaturvedi"
+    given-names: "Girdhari"
+keywords:
+  - IMU
+  - MPU6050
+  - Arduino
+  - sign language
+  - embedded systems
+  - IoT
+  - Bluetooth
+  - gesture recognition
