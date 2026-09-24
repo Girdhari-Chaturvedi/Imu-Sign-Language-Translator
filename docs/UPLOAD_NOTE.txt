@@ -1,0 +1,1 @@
+Binary project assets were generated in the working environment. The GitHub connector currently available in this session supports UTF-8 text contents, not binary PDF/PNG upload. Use the generated PDF and PNG files from the ChatGPT attachment links to upload them to docs/ and diagrams/ respectively.
